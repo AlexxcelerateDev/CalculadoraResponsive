@@ -41,7 +41,6 @@ Error generating stack: `+o.message+`
                            transition-colors duration-200 ease-in-out
                            sm:text-5xl
                            md:text-6xl
-                           lg:text-7xl
                            xl:text-7xl
                            ${n}`,children:e})}function Od(){const[e,n]=Kn.useState(""),[t,r]=Kn.useState(null),[l,o]=Kn.useState(null),u=i=>{if(i==="C")n(""),r(null),o(null);else if(i==="Del")n(e.slice(0,-1));else if(["+","-","×","÷"].includes(i))r(i),o(parseFloat(e)),n("");else if(i==="="){if(t&&l!==null){switch(t){case"+":n((l+parseFloat(e)).toString());break;case"-":n((l-parseFloat(e)).toString());break;case"×":n((l*parseFloat(e)).toString());break;case"÷":n((l/parseFloat(e)).toString());break}r(null),o(null)}}else n(e+i)};return O.jsx(O.Fragment,{children:O.jsx("div",{className:"flex justify-center",children:O.jsx("div",{className:"bg-violet-950 w-full h-screen ",children:O.jsxs("div",{className:"flex flex-col h-full",children:[O.jsxs("div",{className:"bg-sky-950 basis-1/4 text-4xl text-white text-end",children:[O.jsx("p",{className:`text-xl opacity-50
                            sm:text-2xl
