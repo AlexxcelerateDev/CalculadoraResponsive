@@ -9,7 +9,6 @@ export default function Casilla({children, style, resaltado, handleClick}: {chil
                            transition-colors duration-200 ease-in-out
                            sm:text-5xl
                            md:text-6xl
-                           lg:text-7xl
                            xl:text-7xl
                            ${style}`}>
           {children}
